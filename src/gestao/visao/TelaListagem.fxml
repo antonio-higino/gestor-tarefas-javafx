@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestao.controle.TelaListagemController">
+   <children>
+      <TextField fx:id="textFieldTitulo" layoutX="125.0" layoutY="54.0" prefHeight="25.0" prefWidth="434.0" />
+      <Label alignment="CENTER" layoutX="60.0" layoutY="46.0" prefHeight="41.0" prefWidth="53.0" text="Título:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="34.0" layoutY="79.0" prefHeight="41.0" prefWidth="74.0" text="Descrição:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="141.0" prefHeight="41.0" prefWidth="91.0" text="Responsável:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBoxResponsavel" layoutX="125.0" layoutY="149.0" prefHeight="25.0" prefWidth="151.0" />
+      <TextArea fx:id="textAreaListagem" editable="false" layoutX="125.0" layoutY="187.0" prefHeight="199.0" prefWidth="434.0" />
+      <TextArea fx:id="textAreaDescricao" layoutX="125.0" layoutY="87.0" prefHeight="50.0" prefWidth="434.0" />
+      <Label alignment="CENTER" layoutX="49.0" layoutY="13.0" prefHeight="41.0" prefWidth="59.0" text="Número:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldNumero" layoutX="126.0" layoutY="21.0" />
+      <Label alignment="CENTER" layoutX="317.0" layoutY="141.0" prefHeight="41.0" prefWidth="91.0" text="Situação:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBoxSituacao" layoutX="408.0" layoutY="149.0" prefHeight="25.0" prefWidth="151.0" />
+      <Button fx:id="botaoBuscar" layoutX="11.0" layoutY="187.0" mnemonicParsing="false" onAction="#buscarResultados" prefHeight="85.0" prefWidth="100.0" text="Buscar Resultados" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="botaoConcluir" layoutX="300.0" layoutY="11.0" mnemonicParsing="false" onAction="#concluirTarefa" prefHeight="35.0" prefWidth="116.0" text="Concluir Tarefa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botaoExcluirTarefa" layoutX="443.0" layoutY="11.0" mnemonicParsing="false" onAction="#excluirTarefa" prefHeight="35.0" prefWidth="116.0" text="Excluir Tarefa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="botaoEditarTarefa" layoutX="11.0" layoutY="301.0" mnemonicParsing="false" onAction="#abrirTelaEdicao" prefHeight="85.0" prefWidth="100.0" text="Editar Tarefa" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
